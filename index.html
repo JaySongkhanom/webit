@@ -7,20 +7,19 @@
     <title>TICKET</title>
 </head>
 <body>
-    
     <div class="wrapper">
-        <from class="action">
+        <form id="ticket-form" class="action"> <!-- เพิ่ม id="ticket-form" -->
             <h1>IT TICKET</h1>
 
             <div class="input-box">
-                <label for="input">Name</label>
-                <input type="text" placeholder="Name" required>
+                <label for="name">Name</label> <!-- แก้ for="input" เป็น for="name" -->
+                <input type="text" id="name" placeholder="Name" required> <!-- เพิ่ม id="name" -->
             </div>
 
             <div class="input-drop">
-                <label for="dropdown">Department</label>
-                <select name="dropdown" id="dropdown">
-                    <option value="seclect">--Select--</option>
+                <label for="department">Department</label> <!-- แก้ for="dropdown" เป็น for="department" -->
+                <select name="dropdown" id="department"> <!-- เปลี่ยน id="dropdown" เป็น id="department" -->
+                    <option value="select">--Select--</option>
                     <option value="acc">Account</option>
                     <option value="hr">HR</option>
                     <option value="qa">QA</option>
@@ -29,12 +28,12 @@
                     <option value="mkt">Marketing</option>
                     <option value="prod">Production</option>
                     <option value="inj">Injection</option>
-                  </select>
+                </select>
             </div>
 
             <div class="input-box">
-                <label for="input-box">Issue</label>
-                <input type="text" placeholder="Issue" required>
+                <label for="issue">Issue</label> <!-- แก้ for="input-box" เป็น for="issue" -->
+                <input type="text" id="issue" placeholder="Issue" required> <!-- เพิ่ม id="issue" -->
             </div>
 
             <div class="input-pic">
@@ -45,11 +44,9 @@
             <div class="submit">
                 <input type="submit" value="Send">
             </div>
-
-        </from>
+        </form>
     </div>
 
     <script src="sc.js"></script>
-
 </body>
 </html>

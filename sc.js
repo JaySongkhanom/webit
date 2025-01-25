@@ -24,7 +24,7 @@ form.addEventListener('submit', async function(event) {
     }
 
     // ส่งข้อมูลไปยัง Google Apps Script
-    const response = await fetch('YOUR_GOOGLE_APPS_SCRIPT_URL', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxZ-BbgUa1sEL80R3-IVMUE9KHMDkQlV-Tz3n3a-vAGDTuK36nwn1Nlb5HFhuQi7Rbt/exec', {
         method: 'POST',
         body: JSON.stringify({ name, department, issue, picture: pictureUrl }),
         headers: { 'Content-Type': 'application/json' }

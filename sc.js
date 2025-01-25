@@ -15,7 +15,7 @@ form.addEventListener('submit', async function(event) {
         formData.append('file', picture);
 
         // ส่งรูปภาพไปยังบริการอัปโหลด (เช่น ImgBB)
-        const uploadResponse = await fetch('https://api.imgbb.com/1/upload?key=8e776d224ede24f008f068a05666474a', {
+        const uploadResponse = await fetch('https://api.imgbb.com/1/upload?key=1234567890abcdef1234567890abcdef', { // แทนที่ YOUR_IMGBB_API_KEY ด้วย API Key ของคุณ
             method: 'POST',
             body: formData
         });
@@ -24,7 +24,7 @@ form.addEventListener('submit', async function(event) {
     }
 
     // ส่งข้อมูลไปยัง Google Apps Script
-    const response = await fetch('https://script.google.com/macros/s/AKfycbxZ-BbgUa1sEL80R3-IVMUE9KHMDkQlV-Tz3n3a-vAGDTuK36nwn1Nlb5HFhuQi7Rbt/exec', {
+    const response = await fetch('https://script.google.com/macros/s/ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890/exec', { // แทนที่ YOUR_GOOGLE_APPS_SCRIPT_URL ด้วย URL ของ Google Apps Script
         method: 'POST',
         body: JSON.stringify({ name, department, issue, picture: pictureUrl }),
         headers: { 'Content-Type': 'application/json' }
